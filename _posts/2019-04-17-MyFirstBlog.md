@@ -4,7 +4,7 @@ title:      我的第一篇博客
 subtitle:   Hello
 date:       2019-04-17
 author:     XP
-header-img: img/post-bg-cook.jpg
+header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
 
