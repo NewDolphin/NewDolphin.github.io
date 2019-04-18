@@ -1,16 +1,13 @@
 ---
 layout:     post
-title:      ReactiveCocoa 进阶
-subtitle:   函数式编程框架 ReactiveCocoa 进阶
+title:      MarkDown 语法
+subtitle:   语法基础
 date:       2019-04-18
-author:     BY
-header-img: img/post-bg-ios9-web.jpg
+author:     XP
+header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
-    - iOS
-    - ReactiveCocoa
-    - 函数式编程
-    - 开源框架
+    - MarkDown
 ---
 ### 标题
 如果一段文字被定义为标题，只要在这段文字前加 # 号即可。
@@ -21,35 +18,28 @@ tags:
 
 \### 三级标题
 
-以此类推，总共六级标题，建议在井号后加一个空格，这是最标准的 Markdown语法。一级、二级标题会有下分割线
+以此类推，总共六级标题，建议在`#`号后加一个空格，这是最标准的 Markdown语法。一级、二级标题会有下分割线
 
 ### 列表
 
-```
-print(add(1,2))
-
-def add(a, b, c=None):
-result = a + b
-```
-
 1. 无序列表  
-    在段落前 加\*号
+    在段落前 加`*`号
     * 第一点
     * 第二点  
 
 2. 有序列表  
-	在段落前 加1.号
+	在段落前 加`1.`号
 	1. 第一点
 	2. 第二点  
 
 > 1. 文字与符号之间有空格  
-> 2. 嵌套列表需要在下一行，进行锁紧  
+> 2. 嵌套列表需要在下一行，进行缩进
 > 3. 改行末尾添加两个空格表示换行
 
 ### 引用
 `>` + 空格 + 文字
 
-### 图片、连接、邮件地址
+### 图片、链接、邮件地址
 1. 图片  
 `![Mou icon](http://mouapp.com/Mou_128.png)`
 ![Mou icon](http://mouapp.com/Mou_128.png)
@@ -57,7 +47,7 @@ result = a + b
 `[Baidu](www.baidu.com)`  
 [Baidu](www.baidu.com)
 3. 邮件地址  
-`clickable: <uranusjr@gmail.com>`  
+`<uranusjr@gmail.com>`  
 <uranusjr@gmail.com>
 
 ### 斜体、粗体
@@ -73,6 +63,14 @@ result = a + b
 3. --: 标题、内容全部右对齐
 4. :-: 标题、内容全部居中
 
+```
+| Tables        | Are           | Cool  |  
+| :------------ | ------------: | :----:|  
+| col 3 is      | right-aligned | $1600 |  
+| col 2 is      | centered      |   $12 |  
+| zebra stripes | are neat      |    $1 |  
+```
+
 | Tables        | Are           | Cool  |
 | :------------ | ------------: | :----:|
 | col 3 is      | right-aligned | $1600 |
@@ -82,8 +80,8 @@ result = a + b
 
 ### 引用、代码框、代码高亮
 1. 例如想说明一个标点符号
-`"`
-2. 代码框
+`"` \`"`
+2. 代码框 
 
 	```
 	print(add(1,2))
