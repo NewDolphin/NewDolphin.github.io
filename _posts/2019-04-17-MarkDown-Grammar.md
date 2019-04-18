@@ -1,13 +1,16 @@
 ---
 layout:     post
-title:      MarkDown 语法
-subtitle:   语法基础
+title:      ReactiveCocoa 进阶
+subtitle:   函数式编程框架 ReactiveCocoa 进阶
 date:       2019-04-18
-author:     XP
-header-img: img/post-bg-cook.jpg
+author:     BY
+header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - MarkDown
+    - iOS
+    - ReactiveCocoa
+    - 函数式编程
+    - 开源框架
 ---
 ### 标题
 如果一段文字被定义为标题，只要在这段文字前加 # 号即可。
