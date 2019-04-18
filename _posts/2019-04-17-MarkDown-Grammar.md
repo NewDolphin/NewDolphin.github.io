@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      MarkDown语法笔记
-subtitle:  
-date:       2019-04-17
+title:      MarkDown 语法
+subtitle:   语法基础
+date:       2019-04-18
 author:     XP
 header-img: img/post-bg-cook.jpg
 catalog: true
 tags:
-	 - MarkDown
+    - MarkDown
 ---
 ### 标题
 如果一段文字被定义为标题，只要在这段文字前加 # 号即可。
