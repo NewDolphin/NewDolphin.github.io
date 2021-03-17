@@ -20,7 +20,7 @@ tags:
 
 #### 2.1 训练集
 
-<img src="https://github.com/NewDolphin/NewDolphin.github.io/blob/master/img/HW_Kpi/train_data.PNG" alt="训练集数据" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/train_data.PNG" alt="训练集数据" style="zoom:67%;" />
 
 （1）start_time 时间点    datetime64 <br>
 （2）kpi             指标对象 object <br>
@@ -31,7 +31,7 @@ tags:
 
 #### 2.2 测试集
 
-<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/train_data.PNG" alt="训练集数据" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/test_data.PNG" alt="测试集数据" style="zoom:67%;" />
 
 缺少需要预测的label字段
 
@@ -44,13 +44,13 @@ df_train.label.mean()
 # output:0.009556923544611642
 ```
 
-<img src="http://geoanalytics.tju.edu.cn/xp/HW_Kpi_Picture/label.png" alt="标签比例" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/label.png" alt="标签比例" style="zoom:50%;" />
 
 标签分布极不平衡
 
 #### 2.4 检查训练集和测试集分布是否一致
 
-```
+```python
 df_temp = df[df['kpi']=='Number of Answered Sessions After Domain Selection (times)'] 
 
 g = sns.distplot(df_temp['value'][(df_temp["label"].notnull())], color="Red",)
@@ -59,7 +59,7 @@ g = g.legend(["train","test"])
 plt.show()
 ```
 
-<img src="http://geoanalytics.tju.edu.cn/xp/HW_Kpi_Picture/train_test_distribution.png" alt="训练集和测试集分布_1" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/train_test_distribution.png" alt="训练集和测试集分布_1" style="zoom:50%;" />
 
 训练集和测试集数据分布基本一致，因此不需要额外处理
 
@@ -109,15 +109,15 @@ for cc in df.kpi.unique():
 
 （1）非周期型
 
-<img src="http://geoanalytics.tju.edu.cn/xp/HW_Kpi_Picture/ts2.png" alt="时间序列2" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts2.png" alt="时间序列2" style="zoom: 33%;" />
 
-<img src="http://geoanalytics.tju.edu.cn/xp/HW_Kpi_Picture/ts3.png" alt="时间序列3" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts3.png" alt="时间序列3" style="zoom:33%;" />
 
 （2）周期型
 
-<img src="http://geoanalytics.tju.edu.cn/xp/HW_Kpi_Picture/ts1.png" alt="时间序列1" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts1.png" alt="时间序列1" style="zoom:33%;" />
 
-<img src="http://geoanalytics.tju.edu.cn/xp/HW_Kpi_Picture/ts4.png" alt="时间序列4" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts4.png" alt="时间序列4" style="zoom:33%;" />
 
 ### 4. 非周期时间序列
 
@@ -269,7 +269,7 @@ def f1_score(pred, data_validate):
   				   f1_score, early_stopping_rounds=30, verbose_eval=10)
   ```
 
-  <img src="http://geoanalytics.tju.edu.cn/xp/HW_Kpi_Picture/parameter.png" alt="调参1" style="zoom:50%;" />
+  <img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/.png" alt="调参1" style="zoom:50%;" />
 
   最佳迭代次数 cv_result.shape[0] = 187，此时验证集指标为1-F1_Score=0.001458
 
