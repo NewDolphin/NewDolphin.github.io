@@ -31,7 +31,7 @@ tags:
 
 #### 2.2 测试集
 
-<img src="http://geoanalytics.tju.edu.cn/xp/HW_Kpi_Picture/test_data.png" alt="训练集数据" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/train_data.PNG" alt="训练集数据" style="zoom:67%;" />
 
 缺少需要预测的label字段
 
