@@ -24,8 +24,8 @@ tags:
 
 （1）start_time 时间点    datetime64 <br>
 （2）kpi             指标对象 object <br>
-（3）value         指标值     float64 <br>    
-（4）label          网络状态  int64          
+（3）value         指标值     float64 <br>
+（4）label          网络状态  int64
 
 共包含102个指标对象(kpi)，每个对象包含1032个时间点(2018.12.16 0:00 -- 2019.01.27 23:00 每小时)，共105264条记录。
 
@@ -44,7 +44,7 @@ df_train.label.mean()
 # output:0.009556923544611642
 ```
 
-<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/label.png" alt="标签比例" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/label.PNG" alt="标签比例" style="zoom:50%;" />
 
 标签分布极不平衡
 
@@ -59,7 +59,7 @@ g = g.legend(["train","test"])
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/train_test_distribution.png" alt="训练集和测试集分布_1" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/train_test_distribution.PNG" alt="训练集和测试集分布_1" style="zoom:50%;" />
 
 训练集和测试集数据分布基本一致，因此不需要额外处理
 
@@ -109,15 +109,15 @@ for cc in df.kpi.unique():
 
 （1）非周期型
 
-<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts2.png" alt="时间序列2" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts2.PNG" alt="时间序列2" style="zoom: 33%;" />
 
-<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts3.png" alt="时间序列3" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts3.PNG" alt="时间序列3" style="zoom:33%;" />
 
 （2）周期型
 
-<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts1.png" alt="时间序列1" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts1.PNG" alt="时间序列1" style="zoom:33%;" />
 
-<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts4.png" alt="时间序列4" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/ts4.PNG" alt="时间序列4" style="zoom:33%;" />
 
 ### 4. 非周期时间序列
 
@@ -269,7 +269,7 @@ def f1_score(pred, data_validate):
   				   f1_score, early_stopping_rounds=30, verbose_eval=10)
   ```
 
-  <img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/.png" alt="调参1" style="zoom:50%;" />
+  <img src="https://raw.githubusercontent.com/NewDolphin/NewDolphin.github.io/master/img/HW_Kpi/.PNG" alt="调参1" style="zoom:50%;" />
 
   最佳迭代次数 cv_result.shape[0] = 187，此时验证集指标为1-F1_Score=0.001458
 
