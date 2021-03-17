@@ -20,7 +20,7 @@ tags:
 
 #### 2.1 训练集
 
-<img src=url('/img/HW_Kpi/train_data.png') alt="训练集数据" style="zoom: 67%;" />
+<img src="https://github.com/NewDolphin/NewDolphin.github.io/blob/master/img/HW_Kpi/train_data.PNG" alt="训练集数据" style="zoom:67%;" />
 
 （1）start_time 时间点    datetime64 <br>
 （2）kpi             指标对象 object <br>
