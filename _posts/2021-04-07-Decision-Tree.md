@@ -31,7 +31,7 @@ tags:
 
 条件熵 $H(Y\mid X)$ 表示在已知随机变量X的条件下随机变量Y的不确定性。定义为：$H(Y\mid X)=\sum_{x\epsilon X}^{}p(x)\cdot H(Y\mid X=x)$。条件熵是指在给定某个数（某个变量为某个值）的情况下，另一个变量的不确定性(熵)是多少。
 
-样本集合D的熵定义为 $Ent(D)=-\sum_{k=1}^{\left| y \right|}p_{k} \cdot log_{2}(p_{k})$，D中包含 $\left| y \right|$ 个类别，$p_{k}$ 表示第k类样本所占比例，$Ent(D)$ 值越小，则D的纯度越高。
+样本集合D的熵定义为 $Ent(D)=-\sum_{k=1}^{\left\| y \right\|}p_{k} \cdot log_{2}(p_{k})$，D中包含 $\left| y \right|$ 个类别，$p_{k}$ 表示第k类样本所占比例，$Ent(D)$ 值越小，则D的纯度越高。
 
 设离散属性 $a$ 有V个可取值，则以属性 $a$ 划分会产生V个分支结点，每个分支结点包含的样本集和记为 $D^{v}$。以属性 $a$ 对样本集进行划分获得信息增益为
 $$ Gain(D,a)=Ent(D) - \sum_{v=1}^{V}\frac{\left| D^v \right|}{\left| D \right|}\cdot Ent(D^v) $$ 
