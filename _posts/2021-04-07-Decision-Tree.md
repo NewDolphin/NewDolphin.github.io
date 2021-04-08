@@ -60,9 +60,9 @@ ID3算法以*信息增益*来选择每一次的划分属性
 
 ### 属性选择标准
 C4.5算法使用信息增益率来选择最优的划分属性，信息增益率定义为：
-$$ Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}  $$
+$Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$
 ，其中
-$$ IV(a)=-\sum_{v=1}^{V}\frac{\left| D^v \right|}{\left| D \right|}\cdot log_2\frac{\left| D^v \right|}{\left| D \right|} $$
+$IV(a)=-\sum_{v=1}^{V}\frac{\left| D^v \right|}{\left| D \right|}\cdot log_2\frac{\left| D^v \right|}{\left| D \right|} $$
 称为属性a的固有值，属性a的可取值越多，IV(a)就越大。
 
 信息增益率对可取值数较少的属性有偏好，因此C4.5算法并不是直接选择增益率最大的属性，而是先从属性中选择信息增益高于平均水平的属性，再从中选择增益率最高的。
