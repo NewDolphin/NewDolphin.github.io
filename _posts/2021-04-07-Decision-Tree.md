@@ -85,7 +85,7 @@ $\tilde{p_k}$ 表示无缺失值样本中第k类所占比例：$\tilde{p_k}= \fr
 $\tilde{r_v}$ 表示无缺失值样本中在属性a上取值 $a^v$ 的样本所占的比例：$\tilde{r_v}= \frac{\sum_{x\in\tilde{D^v}}^{}w_x}{\sum_{x\in \tilde{D}}^{}w_x}$
 
 基于上述定义，信息增益的计算方式可以推广为
-$$ Gain(D,a)= \rho\cdot Gain(\tilde{D},a)=\rho\cdot (Ent(\tilde{D})-\sum_{v=1}^{V}\tilde{r_v}\cdot Ent(\tilde{D^v})) $$
+$Gain(D,a)= \rho\cdot Gain(\tilde{D},a)=\rho\cdot (Ent(\tilde{D})-\sum_{v=1}^{V}\tilde{r_v}\cdot Ent(\tilde{D^v}))$
 其中 $Ent(\tilde{D})=-\sum_{k=1}^{\left| y \right|}\tilde{p_k}\cdot log_2(\tilde{p_k})$
 
 #### 问题2
@@ -107,9 +107,9 @@ CART算法既可以做回归，也可以做分类。scikit-learn的决策树使�
 “信息增益”会涉及大量的对数运算。能不能简化模型同时也不至于完全丢失熵模型的优点呢？CART算法使用基尼系数来代替信息增益比。基尼系数代表了模型的不纯度，基尼系数越小，则不纯度越低，属性越好。
 
 给定一个数据集D，基尼值的表达式为
-$$ Gini(D)=\sum_{k=1}^{|y|}\sum_{k'\ne k}^{}p_k \cdot p_{k'}=1-\sum_{k=1}^{|y|}p_k^2 $$
+$Gini(D)=\sum_{k=1}^{|y|}\sum_{k'\ne k}^{}p_k \cdot p_{k'}=1-\sum_{k=1}^{|y|}p_k^2$
 $Gini(D)$ 反映了从数据集D中随机抽两个样本，其类别不一致的概率，$Gini(D)$ 越小，则数据集D的纯度越高。属性a的基尼指数定义为
-$$ Gini\_index(D,a)=\sum_{v=1}^{V}\frac{|D^v|}{|D|}Gini(D^v)  $$
+$Gini\_index(D,a)=\sum_{v=1}^{V}\frac{|D^v|}{|D|}Gini(D^v)$
 在候选属性集合A中，选择使得划分后基尼指数最小的属性作为划分属性。
 
 对比基尼值表达式和熵的表达式，二次运算比对数简单很多。而且基尼值的对应的误差仅比熵稍差一点，因此，基尼值可以做为熵模型的一个近似替代。
@@ -138,7 +138,7 @@ CART分类树和回归树区别主要有两点
 
 #### 选择最优划分属性的方式不同
 CART算法使用了和方差来计算每个属性值作为划分属性时的效果。具体来说，使用任意划分属性a，将D划分成的数据集D1和D2，求出D1和D2的均方差之和，表达式为：
-$$ \sum_{x_i\in D_1}^{}(y_i-c_1)^2 +  \sum_{x_i\in D_2}^{}(y_i-c_2)^2  $$
+$\sum_{x_i\in D_1}^{}(y_i-c_1)^2 +  \sum_{x_i\in D_2}^{}(y_i-c_2)^2$
 $c_1$ 和 $c_2$ 分别表示两个数据集的标签均值
 
 #### 预测的方式
